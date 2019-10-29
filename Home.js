@@ -1,10 +1,22 @@
 import React from 'react'
-import {View, Text} from 'react-native'
+import {View, Text, Button, StyleSheet} from 'react-native'
 
-export default ()=>{
+export default ({ history })=>{
     return(
     <View>
-        <Text>Hello World</Text>
+        <Text style={styles.text}>FRMR</Text>
+        <Button 
+        title="Sign in"
+        onPress={()=>{
+            history.push("/howItWorks")
+        }}
+        />
     </View>
     )
 }
+
+const styles = StyleSheet.create({
+    text: {
+        fontSize: 50
+    }
+})

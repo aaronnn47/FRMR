@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import { NativeRouter, Switch, Route} from 'react-router-native'
+<script src="http://172.20.20.20:8097"></script>
 import Home from './Home'
 import HowItWorks from './HowItWorks'
-
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' + 'Shake or press menu button for dev menu',
-});
 
 export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <HowItWorks/>
-      </View>
+      <NativeRouter>
+        <View style={styles.container}>
+          <Switch>
+            {/* <Route exact path="/" component={Home}/> */}
+            <Route path="/" component={HowItWorks}/>
+          </Switch>
+          
+        </View>
+      </NativeRouter>
     );
   }
 }

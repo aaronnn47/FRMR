@@ -1,9 +1,9 @@
 {
-  "devToolsPort": 19003,
+  "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 69920,
+  "packagerPid": 83656,
   "expoServerNgrokUrl": "https://ch-ai8.aaronnn47.frmr.exp.direct",
   "packagerNgrokUrl": "https://packager.ch-ai8.aaronnn47.frmr.exp.direct",
-  "ngrokPid": 69931
+  "ngrokPid": 83667
 }

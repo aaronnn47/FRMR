@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { NativeRouter, Switch, Route} from 'react-router-native'
-<script src="http://172.20.20.20:8097"></script>
 import Home from './Home'
 import HowItWorks from './HowItWorks'
+import Product from './Product'
 
 export default class App extends Component {
   render() {
@@ -12,7 +12,7 @@ export default class App extends Component {
         <View style={styles.container}>
           <Switch>
             {/* <Route exact path="/" component={Home}/> */}
-            <Route path="/" component={HowItWorks}/>
+            <Route path="/" component={Product}/>
           </Switch>
           
         </View>

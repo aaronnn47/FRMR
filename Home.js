@@ -6,7 +6,7 @@ export default ({ history })=>{
     <View>
         <Text style={styles.text}>FRMR</Text>
         <Button 
-        title="Sign in"
+        title="Sign in here"
         onPress={()=>{
             history.push("/howItWorks")
         }}
